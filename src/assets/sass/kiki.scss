@@ -3,7 +3,7 @@
 @import "./shared/_variables.scss";
 
 .kiki {
-    background: color;
+    background: $bg-shade-black;
 
     // default sass responsive
     @include responsive (mobile-sm) {
@@ -26,6 +26,20 @@
         background-attachment: fixed;
         min-width: 90em;
         max-width: 100em;
+    }
+
+    .spacing {
+        height: 0.75em;
+    }
+    
+    .landing-page {
+        color: $text-lite-white;
+        height: $mobile-height;
+        font-family: 'Dos';
+        line-height: 1.2em;
+        font-size: 10pt;
+        
+
     }
 
 }
