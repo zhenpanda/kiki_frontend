@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom';
 
 import * as actions from '../actions/utility/index';
 
@@ -8,7 +9,8 @@ import '../assets/css/kiki.css';
 
 class Landing extends Component {
 
-  render() {    
+  render() { 
+
     const firstLine = 
     `
     <string>Starting MS-DOS...</string>
@@ -29,20 +31,20 @@ class Landing extends Component {
     const terminalOne = `<div>C:SET App decentrailized.<div>`;
     const terminalTwo = `<div>C:SET Ethereum Config=C:TCP.CFG</div>`;
     const terminalFour = `<div>C:...access granted</div>`;
-
     const welcomeOne = `
     <br/>
     <br/>
     <div style=text-align: center;>
     ▒▒▒▒▒▒▒▒▓█▇▅▂▂ [ You are in ] ▂▂▅▇█▓▒▒▒▒▒▒▒▒</div>
     <br/>
-    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</div>
+    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</div>
     <div>
     </br/>
     `
     const welcomeTwo = `
-    ---== ( Welcome to KIKI Clothing Shop ) ==---</div>
     <br/>
+    <div>---== ( Welcome to KIKI Clothing Shop ) ==---</div>
+    <div>_____________________________________________</div>
     </br>
     <br/>
     <div>▂▅▇ Tap Any where on screen to continue ▇▅▂</div>
@@ -52,32 +54,37 @@ class Landing extends Component {
     `
 
     return(
-        <div className="kiki">
-          {/* onclick navigate to next page */}
-          <div className="landing-page">
-          <Typewriter
-            options={{
-              autoStart: true,
-              delay: 20,
-              loop: true
-            }}
-            onInit={(typewriter) => {
-              typewriter.typeString(firstLine)
-              .pasteString(secondLine)
-              .pasteString(thirdLine)
-              .pasteString(terminalOne)
-              .pasteString(terminalTwo)
-              .pasteString(terminalFour)
-              .typeString(welcomeOne)
-              .pasteString(welcomeTwo)
+      <div className="kiki">
+        {/* onclick navigate to next page */}
+        <Link to="/enter">
 
-              .start()
-              .pauseFor(500000)
-            }}
-          />
+          <div className="landing-page">
+
+            <Typewriter
+              options={{
+                autoStart: true,
+                delay: 20,
+                loop: true
+              }}
+              onInit={(typewriter) => {
+                typewriter.typeString(firstLine)
+                .pasteString(secondLine)
+                .pasteString(thirdLine)
+                .pasteString(terminalOne)
+                .pasteString(terminalTwo)
+                .pasteString(terminalFour)
+                .typeString(welcomeOne)
+                .pasteString(welcomeTwo)
+                .start()
+                .pauseFor(50000000)
+              }}
+            />
+
           </div>
-        </div>
-      )
+
+        </Link>
+      </div>
+    )
   }
 }
 const mapStateToProps = (state) => {

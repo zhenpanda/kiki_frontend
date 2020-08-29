@@ -18,6 +18,8 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 import 'react-transitions/dist/animations.css';
 
 import Landing from './containers/Landing';
+import Enter from './containers/Enter';
+import Intro from './containers/Intro';
 
 // redux store
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
@@ -29,6 +31,8 @@ const App = () => (
         <Switch>
 
         <Route exact path='/' component={ Landing } />
+        <Route path='/enter' component={ Enter } />
+        <Route path='/intro' component={ Intro } />
 
         </Switch>
       </Router>
