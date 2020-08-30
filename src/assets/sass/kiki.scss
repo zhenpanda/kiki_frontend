@@ -47,6 +47,10 @@ body{
         border-color: $border-grey;
     }
     
+    .register-page {
+        
+    }
+
     .landing-page {
         color: $text-lite-white;
     }
@@ -179,6 +183,18 @@ body{
             color: $bg-shade-black;
             background: $text-lite-white; 
         }
+    }
+
+    .market-page {
+        border: 0.15em solid $border-grey;
+
+        .market-wrapper {
+            border: 0.11em solid $border-grey;
+            margin: 0.25em;
+            height: 38em;
+
+        }
+
     }
 
 }

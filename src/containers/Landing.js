@@ -56,7 +56,7 @@ class Landing extends Component {
     return(
       <div className="kiki">
         {/* onclick navigate to next page */}
-        <Link to="/enter">
+        <Link to="/intro">
 
           <div className="landing-page">
 

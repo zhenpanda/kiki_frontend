@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
 import ReactPlayer from 'react-player';
-
 import * as actions from '../actions/utility/index';
 
 import '../assets/css/kiki.css';
@@ -14,15 +13,17 @@ class Intro extends Component {
     }
 
     render() { 
-        
+
+        const youtubeVidOne = "https://www.youtube.com/watch?v=nyp_PczrqFE";
+        const youtubeVidTwo = "https://www.youtube.com/watch?v=3YmFNvo8tvw";
+
         const displayIntroPages = (page) => {
-            
             if(page === 1) {
                 return(
                     <div>    
                         <ReactPlayer 
                             className='react-player'
-                            url="https://www.youtube.com/watch?v=nyp_PczrqFE"
+                            url={youtubeVidOne ? youtubeVidOne : "www.youtube.com"}
                         />
                         <div className="video-player-label moveFromBottomFade delay80">the Keynote</div>
     
@@ -32,7 +33,7 @@ class Intro extends Component {
                         
                         <ReactPlayer 
                             className='react-player'
-                            url="https://www.youtube.com/watch?v=3YmFNvo8tvw"
+                            url={youtubeVidTwo ? youtubeVidTwo: "www.youtube.com"}
                         />
                         <div className="video-player-label moveFromBottomFade delay200">the Walkthrough</div>
     
@@ -50,12 +51,12 @@ class Intro extends Component {
 
                     </div>
                 )
-            }else{
+            }else if(page === 2){
                 return(
                     <div>
                         <div className="your-turn-text">Now it's your turn...</div>
-
-                        <Link to="/">
+                        
+                        <Link to="/market">
                             <div className="scan-in-box-wrap z-depth-3 flipInBottom">
                                 <div className="scan-in-text moveFromBottomFade delay80">Scan In</div>
                             </div>
@@ -74,7 +75,16 @@ class Intro extends Component {
 
                     </div>
                 )
+            }else if(page === 3) {
+                return(                   
+                    <div>
+                        <div class="word">LOADING...</div>
+                        <div class="overlay"></div>
+                    </div>
+                )
+
             }
+
         }
 
         return(

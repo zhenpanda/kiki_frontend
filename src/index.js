@@ -17,9 +17,10 @@ import '../node_modules/materialize-css/js/forms.js';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import 'react-transitions/dist/animations.css';
 
+import Register from './containers/Register';
 import Landing from './containers/Landing';
-import Enter from './containers/Enter';
 import Intro from './containers/Intro';
+import Market from './containers/Market';
 
 // redux store
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
@@ -28,13 +29,16 @@ const history = createBrowserHistory();
 const App = () => (
     <Provider store={createStoreWithMiddleware(reducers)}>
       <Router history={history}>
+        
         <Switch>
-
-        <Route exact path='/' component={ Landing } />
-        <Route path='/enter' component={ Enter } />
-        <Route path='/intro' component={ Intro } />
+          
+          <Route exact path='/' component={ Landing } />
+          <Route path='/intro' component={ Intro } />
+          <Route path='/register'component={ Register } />
+          <Route path='/market' component={ Market } />
 
         </Switch>
+
       </Router>
     </Provider>
 );
