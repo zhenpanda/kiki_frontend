@@ -4,24 +4,68 @@ import {connect} from 'react-redux';
 
 import * as actions from '../actions/utility/index';
 
+import testShirt from '../assets/images/test_shirt.png';
 import '../assets/css/kiki.css';
 
 class Market extends Component {
 
     render() { 
 
+        const displayShirt = (cssAnim) => {
+            return(
+                <div>
+                    <div className={"market-wrap moveFromLeftFade " + cssAnim}>
+                        <div className="row">
+
+                            <div className="col s4 m4">
+                                <div className="market-header" />
+                                <div className="shirt-text-area">
+
+                                </div>
+                                <div className="market-mid">
+
+                                </div>
+                            </div>
+
+                            <div className="col s8 m8">         
+                                <div className="market-header" />
+                                <div className="hex-code-text"><span>&#10070;</span> 0x 1001 <span>&#10070;</span></div>                       
+                                <div className="test-shirt-area">
+                                    <img src={testShirt} className="test-shirt-image" alt="" />
+                                </div>
+                                <div className="market-mid">
+                                    <div className="market-bottom-border" />
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div className="market-bottom" />
+                </div>
+            )
+        }
+
         return(
             <div className="kiki">
                 <div className="market-page">
 
-                    <div className="market-wrapper">
-
+                    <div className="nav-bar">
+                        <div className="nav-title">KIKI GFX Market</div>
                     </div>
+
+                    {displayShirt("delay80")}
+                    {displayShirt("delay100")}
+                    {displayShirt("delay200")}
+                    {displayShirt("delay300")}
+                    {displayShirt("delay500")}
+                    {displayShirt("delay500")}
 
                 </div>
             </div>
         )
     }
+
 }
 const mapStateToProps = (state) => {
     // console.log("Home ->", state);

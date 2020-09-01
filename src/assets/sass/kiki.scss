@@ -186,15 +186,90 @@ body{
     }
 
     .market-page {
-        border: 0.15em solid $border-grey;
+        margin-top: 0em !important;
+        height: 50em;
+        background: $bg-shade-black;
 
-        .market-wrapper {
-            border: 0.11em solid $border-grey;
-            margin: 0.25em;
-            height: 38em;
+        .nav-bar {
+            height: 4em;
+            background: $text-lite-white;
+            border-radius: 0.5em;
 
+            .nav-title {
+                text-align: center;
+                font-size: 15pt;
+                padding: 0.75em;
+                color: $bg-shade-black;
+                border-bottom: 0.2em solid $bg-shade-black;
+            }
         }
 
+        .market-wrap {
+            margin-top: 1.5em;
+            height: 23em;
+            border-radius: 0.15em;
+            border: 0.1em solid $text-lite-white;
+            border-bottom: 0.75em solid $text-lite-white;
+            border-radius: 0.85em;
+            border-top-left-radius: 0em;
+            border-top-right-radius: 0em;
+
+            .hex-code-text {
+                text-align: center;
+                color: $text-lite-white;
+                font-size: 12pt;
+            }
+        }
+        .market-mid {
+            border-top: 0.1em solid $text-lite-white;
+            background: $text-lite-white;
+            height: 4em;    
+            margin-top: -1em;
+        }
+        .market-bottom {
+            margin-top: -0.68em;
+            height: 0.25em;
+            margin-bottom: 3.5em;
+            background: $bg-shade-black;
+            position: relative;
+            z-index: 10;
+        }    
+
+        .market-header {
+            height: 1.5em;
+            background: $text-lite-white;
+            margin-bottom: 1em;    
+        }
+
+        // t-shirt side
+        .test-shirt-area {
+            margin: 1em;
+            border: 0.1em solid $text-lite-white;
+            border-bottom: 0em;
+
+        }
+        .test-shirt-image {
+            border: 0.1em solid $text-lite-white;
+            border-bottom: 0em;
+            width: 85%;
+            margin: auto;
+            margin-top: 1.25em;
+            display: block;
+            padding: 0.5em;
+        }
+        .market-bottom-border {
+            margin: auto;
+            width: 74%;
+            border-bottom: 0.15em solid $bg-shade-black;
+            border-left: 0.15em solid $bg-shade-black;
+            border-right: 0.15em solid $bg-shade-black;
+            height: 1.5em;    
+        }
+
+        .shirt-text-area {
+            height: 16.8em;
+        }
     }
 
 }
+
