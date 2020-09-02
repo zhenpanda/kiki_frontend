@@ -14,23 +14,43 @@ class Market extends Component {
         const displayShirt = (cssAnim) => {
             return(
                 <div>
-                    <div className={"market-wrap moveFromLeftFade " + cssAnim}>
+                    <div className={"market-wrap moveFromBottomFade " + cssAnim}>
                         <div className="row">
 
                             <div className="col s4 m4">
                                 <div className="market-header" />
+
                                 <div className="shirt-text-area">
+                                    <div className="top-text-box">
+                                        ETH
+                                        CHAIN REACTION
+                                        T-SHIRT
+                                    </div>
+                                    <div className="bot-text-box">Limited Edition</div>
+                                    <div className="divider-box">
+                                        <div className="row">
+                                            <div className="col s6 m6">
+                                                <div className="left-box">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div className="col s6 m6">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
+
                                 <div className="market-mid">
-
                                 </div>
+
                             </div>
 
                             <div className="col s8 m8">         
                                 <div className="market-header" />
                                 <div className="hex-code-text"><span>&#10070;</span> 0x 1001 <span>&#10070;</span></div>                       
-                                <div className="test-shirt-area">
+                                <div className="test-shirt-area moveFromBottomFade">
                                     <img src={testShirt} className="test-shirt-image" alt="" />
                                 </div>
                                 <div className="market-mid">

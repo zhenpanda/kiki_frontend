@@ -268,7 +268,29 @@ body{
 
         .shirt-text-area {
             height: 16.8em;
+            padding: 0.5em;
+
+            .top-text-box {
+                color: $text-mid-gold;
+                font-size: 17pt;
+                line-height: 1em;
+                padding-top: 1em;
+            }
+            .bot-text-box {
+                color: $btn-lite-teal;
+                font-size: 8.5pt;
+            }
         }
+        .divider-box {
+            border-top: 0.15em solid $text-lite-white;
+            margin-top: 1em;    
+            margin-left: -0.5em !important;
+            margin-right: -1.5em !important;
+        }
+        .left-box {
+            height: 5em;
+        }
+
     }
 
 }
