@@ -21,6 +21,7 @@ import Register from './containers/Register';
 import Landing from './containers/Landing';
 import Intro from './containers/Intro';
 import Market from './containers/Market';
+import MyShirts from './containers/MyShirts';
 
 // redux store
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
@@ -36,6 +37,7 @@ const App = () => (
           <Route path='/intro' component={ Intro } />
           <Route path='/register'component={ Register } />
           <Route path='/market' component={ Market } />
+          <Route path='/myshirts'component={ MyShirts } />
 
         </Switch>
 

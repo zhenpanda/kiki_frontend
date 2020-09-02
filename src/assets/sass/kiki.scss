@@ -2,6 +2,29 @@
 @import "./shared/_responsive.scss";
 @import "./shared/_variables.scss";
 
+.swal2-popup {
+    background: $bg-shade-black !important;
+    border: 0.1em solid $text-lite-white !important;
+
+    .swal2-icon {
+        border-color: $text-mid-gold !important;
+        color: $text-mid-gold !important;
+    }
+    .swal2-title {
+        color: $text-lite-white !important;
+    }
+    .swal2-content {
+        color: $btn-lite-teal !important;
+        font-size: 11pt;
+    }
+    .swal2-confirm {
+        font-family: 'Dos';
+    }
+    .swal2-cancel {
+        font-family: 'Dos';
+    }
+}
+
 body{
     background: $bg-shade-black;
     font-family: 'Dos';
@@ -47,10 +70,6 @@ body{
         border-color: $border-grey;
     }
     
-    .register-page {
-        
-    }
-
     .landing-page {
         color: $text-lite-white;
     }
@@ -190,17 +209,37 @@ body{
         height: 50em;
         background: $bg-shade-black;
 
-        .nav-bar {
+        .header-bar {
             height: 4em;
             background: $text-lite-white;
             border-radius: 0.5em;
 
-            .nav-title {
+            .header-title {
                 text-align: center;
                 font-size: 15pt;
                 padding: 0.75em;
                 color: $bg-shade-black;
                 border-bottom: 0.2em solid $bg-shade-black;
+            }
+        }
+
+        .nav-bar {
+            margin-top: 1.25em;
+            height: 4.25em;
+            border: 0.1em solid $text-lite-white;
+            padding: 0.85em;
+
+            .nav-title {
+                color: $text-lite-white;
+                font-size: 10pt;
+                margin-top: 0em;
+                margin-left: 0.6em;    
+                margin-right: 0.2em; 
+                border: 0.1em solid $text-lite-white;
+                padding: 0.5em;
+                padding-left: 0.7em;
+                padding-right: 0.7em;    
+                display: inline-block;
             }
         }
 
@@ -225,6 +264,7 @@ body{
             background: $text-lite-white;
             height: 4em;    
             margin-top: -1em;
+            margin-right: -0.1em
         }
         .market-bottom {
             margin-top: -0.68em;
@@ -239,6 +279,8 @@ body{
             height: 1.5em;
             background: $text-lite-white;
             margin-bottom: 1em;    
+            margin-right: -0.1em;
+            margin-top: -0.1em;
         }
 
         // t-shirt side
@@ -259,7 +301,7 @@ body{
         }
         .market-bottom-border {
             margin: auto;
-            width: 74%;
+            width: 74.5%;
             border-bottom: 0.15em solid $bg-shade-black;
             border-left: 0.15em solid $bg-shade-black;
             border-right: 0.15em solid $bg-shade-black;
@@ -289,9 +331,43 @@ body{
         }
         .left-box {
             height: 5em;
+
+            .buy-btn {
+                color: $text-lite-white;
+                text-align: center;
+                font-size: 25pt;
+                padding-top: 0.7em;
+            }
         }
 
     }
 
-}
+    .header-title-text {
+        color: $text-main-oj !important;
+    }
 
+    .white-area {
+        background: $text-lite-white;
+    }
+    .black-area {
+        background: $bg-shade-black;
+    }
+
+    .shirt-btn {
+        font-size: 12pt;
+        text-align: center;
+        padding: 0.75em;
+        margin: 0.75em;
+        border: 0.1em solid $text-lite-white;     
+    }
+    .remix-color {
+        color: $text-dark-teal;
+    }
+    .send-color {
+        color: $btn-default-green;
+    }
+    .redeem-color {
+        color: $border-mid-gold;
+    }
+
+}
