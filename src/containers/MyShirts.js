@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import Swal from 'sweetalert2/src/sweetalert2.js'
 import '../../node_modules/sweetalert2/dist/sweetalert2.css';
 import $ from 'jquery';
 
@@ -68,6 +67,8 @@ class MyShirts extends Component {
 
                     {displayShirt()}
 
+                    {/* display shirt details */}
+                    
                 </div>
             </div>
         )
