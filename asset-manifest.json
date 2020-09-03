@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/kiki_frontend/static/css/main.d8246c02.chunk.css",
+    "main.js": "/kiki_frontend/static/js/main.2aca6833.chunk.js",
+    "main.js.map": "/kiki_frontend/static/js/main.2aca6833.chunk.js.map",
+    "runtime-main.js": "/kiki_frontend/static/js/runtime-main.57007860.js",
+    "runtime-main.js.map": "/kiki_frontend/static/js/runtime-main.57007860.js.map",
+    "static/css/2.405f8ec7.chunk.css": "/kiki_frontend/static/css/2.405f8ec7.chunk.css",
+    "static/js/2.1576bfb5.chunk.js": "/kiki_frontend/static/js/2.1576bfb5.chunk.js",
+    "static/js/2.1576bfb5.chunk.js.map": "/kiki_frontend/static/js/2.1576bfb5.chunk.js.map",
+    "index.html": "/kiki_frontend/index.html",
+    "precache-manifest.9313c5dee6c4152e5de1703b02d256db.js": "/kiki_frontend/precache-manifest.9313c5dee6c4152e5de1703b02d256db.js",
+    "service-worker.js": "/kiki_frontend/service-worker.js",
+    "static/css/2.405f8ec7.chunk.css.map": "/kiki_frontend/static/css/2.405f8ec7.chunk.css.map",
+    "static/css/main.d8246c02.chunk.css.map": "/kiki_frontend/static/css/main.d8246c02.chunk.css.map",
+    "static/js/2.1576bfb5.chunk.js.LICENSE.txt": "/kiki_frontend/static/js/2.1576bfb5.chunk.js.LICENSE.txt",
+    "static/media/kiki.css": "/kiki_frontend/static/media/DOSWin.6c838d8b.ttf",
+    "static/media/font-awesome.min.css": "/kiki_frontend/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/test_shirt.png": "/kiki_frontend/static/media/test_shirt.0d6f261c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57007860.js",
+    "static/css/2.405f8ec7.chunk.css",
+    "static/js/2.1576bfb5.chunk.js",
+    "static/css/main.d8246c02.chunk.css",
+    "static/js/main.2aca6833.chunk.js"
+  ]
+}
