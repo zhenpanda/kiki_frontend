@@ -9,11 +9,11 @@ const Header = () => {
             </div>
 
             <div className="nav-bar moveFromTopFade delay80">
-                <Link to="/myshirts">
-                    <span className="nav-title" id="myshirt-header">MY SHIRTS</span>
-                </Link>
                 <Link to="/market">
                     <span className="nav-title" id="market-header">SHOP SHIRTS</span>
+                </Link>
+                <Link to="/myshirts">
+                    <span className="nav-title" id="myshirt-header">MY SHIRTS</span>
                 </Link>
                 <span className="nav-title">FAVORITES</span>
             </div>

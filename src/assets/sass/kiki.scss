@@ -252,12 +252,6 @@ body{
             border-radius: 0.85em;
             border-top-left-radius: 0em;
             border-top-right-radius: 0em;
-
-            .hex-code-text {
-                text-align: center;
-                color: $text-lite-white;
-                font-size: 12pt;
-            }
         }
         .market-mid {
             border-top: 0.1em solid $text-lite-white;
@@ -353,6 +347,13 @@ body{
         background: $bg-shade-black;
     }
 
+    .hex-code-text {
+        text-align: center;
+        color: $text-lite-white;
+        font-size: 12pt;
+    }
+
+    // shirt page css
     .shirt-btn {
         font-size: 12pt;
         text-align: center;
@@ -368,6 +369,105 @@ body{
     }
     .redeem-color {
         color: $border-mid-gold;
+    }
+
+    .gen-detail {
+        text-align: center;
+        color: $text-lite-white;
+        margin-top: -0.25em;    
+        font-size: 18pt;
+    }
+    .rmx-detail {
+        text-align: center;
+        font-size: 15pt;
+        margin-top: 0.75em;  
+        color: $text-exit-red;
+    }
+    .qr-code-wrap {
+        margin: 1em;
+        margin-top: 3.5em;
+
+        .qr-code-img {
+            border: 0.1em dashed $text-lite-white;
+            padding: 1em;
+            width: 100%;
+        }
+    }
+    .qr-detail {
+        text-align: center;
+        color: $text-lite-white;
+        margin-top: 2em;    
+        font-size: 18pt;
+    }
+    .continue-text {
+        text-align: center;
+        margin-top: 1em;   
+        color: $text-lite-white;
+        font-size: 10pt;
+    }
+    .short-mid-bar {
+        height: 2.75em !important;    
+    }
+    .second-shirt {
+        margin-top: 1em;
+        border: 0.1em dashed $text-lite-white !important;
+        .second-tee {
+            margin-bottom: 1em;
+            border: 0.1em dashed $text-lite-white !important;
+        }
+    }
+
+    .text-margin {
+        margin-top: 0.75em;
+    }
+
+    .remix-box {
+        margin-top: 1.25em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 0em;
+        padding: 0.75em;
+        background: $text-mid-gold;
+        border-radius: 0.5em;
+        height: 2.95em;
+
+        .remix-with-text {
+            text-align: center;
+            color: $bg-shade-black;
+            font-size: 17pt;
+            border-bottom: 0.1em solid $bg-shade-black;
+            line-height: 0.85em;
+            padding-bottom: 0.15em;
+            margin-left: -1em;
+            margin-right: -1em;
+        }
+    }
+    .loader-box {
+        margin: 5em;
+    }
+    .loading-text {
+        text-align: center;
+        font-size: 15pt;
+        color: $text-lite-white;
+        margin-top: 3em;
+    }
+    .loading-detail {
+        text-align: center;
+        font-size: 12pt;
+        color: $text-mid-gold;
+        margin-top: 1em;
+    }
+
+    .restart {
+        color: $text-lite-white;
+        border: 0.1em solid $text-lite-white;
+        width: 20%;
+        display: block;
+        padding: 0.5em;
+        margin-top: 3.5em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }

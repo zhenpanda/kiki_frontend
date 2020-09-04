@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-// import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2/src/sweetalert2.js'
 import '../../node_modules/sweetalert2/dist/sweetalert2.css';
 import $ from 'jquery';
@@ -41,6 +40,7 @@ class Market extends Component {
                                             <div className="col s12 m12">
                                                 <div className="left-box">
                                                     <div className="buy-btn moveFromBottomFade" onClick={() => {
+
                                                         Swal.fire({
                                                             title: 'Are you sure?',
                                                             text: "You won't be able to revert this!",
@@ -49,20 +49,21 @@ class Market extends Component {
                                                             confirmButtonColor: '#3085d6',
                                                             cancelButtonColor: '#d33',
                                                             confirmButtonText: 'Yes, Buy it!'
-                                                          }).then((result) => {
+                                                        }).then((result) => {
                                                             if (result.value) {
-                                                              Swal.fire({
+                                                                Swal.fire({
                                                                 icon: 'success',
                                                                 title:'T-Shirt Purchased!',
                                                                 text:'Yay!'
-                                                              }).then((result) => {
+                                                                }).then((result) => {
                                                                     // console.log(result);
                                                                     if(result) {
                                                                         window.location.replace("/myshirts")
                                                                     }
-                                                              })
+                                                                })
                                                             }
-                                                          })
+                                                        })
+
                                                     }}>BUY</div>
                                                 </div>
                                             </div>
