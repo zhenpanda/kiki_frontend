@@ -30,6 +30,8 @@ class Intro extends Component {
                         <div className="spacing" />
                         <div className="divider" />
                         <div className="spacing" />
+                        <div className="spacing" />
+                        <div className="spacing" />
                         
                         <ReactPlayer 
                             className='react-player'

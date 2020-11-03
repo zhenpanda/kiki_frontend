@@ -1,6 +1,10 @@
+// @font-face {
+// 	font-family: 'Dos';
+// 	src: url('../fonts/DOSWin.ttf');
+// }
 @font-face {
-	font-family: 'Dos';
-	src: url('../fonts/DOSWin.ttf');
+	font-family: 'SperryPC';
+	src: url('../fonts/SperryPC.ttf');
 }
 
 // reset
@@ -20,7 +24,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
     vertical-align: baseline;
-    font-family: "Dos", sans-serif;
+    font-family: "SperryPC", sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -33,7 +37,7 @@ body {
 }
 ol, ul {
     list-style: none;
-	font-family: 'Raleway';
+	font-family: 'SperryPC';
 }
 blockquote, q {
 	quotes: none;

@@ -19,20 +19,20 @@ class Market extends Component {
 
     render() { 
 
-        const displayShirt = (cssAnim) => {
+        const displayDesign = (num) => {
             return(
                 <div>
-                    <div className={"market-wrap " + cssAnim}>
+                    <div className={"market-wrap"}>
                         <div className="row">
 
-                            <div className="col s4 m4">
+                            <div className="col s5 m5">
                                 <div className="market-header" />
 
                                 <div className="shirt-text-area">
                                     <div className="top-text-box moveFromLeftFade delay100">
                                         ETH
                                         CHAIN REACTION
-                                        T-SHIRT
+                                        DESIGN
                                     </div>
                                     <div className="bot-text-box">Limited Edition</div>
                                     <div className="divider-box">
@@ -53,12 +53,12 @@ class Market extends Component {
                                                             if (result.value) {
                                                                 Swal.fire({
                                                                 icon: 'success',
-                                                                title:'T-Shirt Purchased!',
+                                                                title:'Design Purchased!',
                                                                 text:'Yay!'
                                                                 }).then((result) => {
                                                                     // console.log(result);
                                                                     if(result) {
-                                                                        window.location.replace("/myshirts")
+                                                                        window.location.replace("/mydesign")
                                                                     }
                                                                 })
                                                             }
@@ -72,19 +72,13 @@ class Market extends Component {
 
                                 </div>
 
-                                <div className="market-mid">
-                                </div>
-
                             </div>
 
-                            <div className="col s8 m8">         
+                            <div className="col s7 m7">         
                                 <div className="market-header" />
-                                <div className="hex-code-text"><span>&#10070;</span> 0x 1001 <span>&#10070;</span></div>                       
+                                <div className="hex-code-text"><span>&#10070;</span> {"0x 100"+num} <span>&#10070;</span></div>                       
                                 <div className="test-shirt-area">
                                     <img src={testShirt} className="test-shirt-image" alt="" />
-                                </div>
-                                <div className="market-mid">
-                                    <div className="market-bottom-border" />
                                 </div>
                             </div>
                             
@@ -102,12 +96,14 @@ class Market extends Component {
 
                     <Header />
 
-                    {displayShirt()}
-                    {displayShirt()}
-                    {displayShirt()}
-                    {displayShirt()}
-                    {displayShirt()}
-                    {displayShirt()}
+                    {displayDesign(1)}
+                    
+                    {displayDesign(2)}
+                    {displayDesign(3)}
+                    {displayDesign(4)}
+                    {displayDesign(5)}
+                    {displayDesign(6)} 
+                   
 
                 </div>
             </div>

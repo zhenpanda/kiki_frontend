@@ -41,10 +41,7 @@ class MyShirts extends Component {
                                     <div className="market-header" />
                                     <div className="hex-code-text"><span>&#10070;</span> 0x 1001 <span>&#10070;</span></div>                       
                                     <div className="test-shirt-area white-area">
-                                        <img src={testShirt} className="test-shirt-image black-area" alt="" />
-                                    </div>
-                                    <div className="market-mid">
-                                        <div className="market-bottom-border" />
+                                        <img src={testShirt} className="test-shirt-image black-area shirt-box" alt="" />
                                     </div>
                                 </div>
     
@@ -70,10 +67,8 @@ class MyShirts extends Component {
                                             })
 
                                         }}>REMIX</div>
-                                        <div className="shirt-btn send-color">SEMD</div>
+                                        <div className="shirt-btn send-color">TRADE</div>
                                         <div className="shirt-btn redeem-color">REDEEM</div>
-                                    </div>
-                                    <div className="market-mid">
                                     </div>
     
                                 </div>
@@ -140,7 +135,7 @@ class MyShirts extends Component {
                                     }
                                 })
 
-                            }}> - [ REMIX IT ] - </div>
+                            }}>[ CONFIRM MIX ]</div>
                         </div>
 
                         <div className="row">
@@ -192,10 +187,7 @@ class MyShirts extends Component {
                                     <div className="market-header" />
                                     <div className="hex-code-text"><span>&#10070;</span> 0x 1002 <span>&#10070;</span></div>                       
                                     <div className="test-shirt-area white-area">
-                                        <img src={remixShirt} className="test-shirt-image black-area" alt="" />
-                                    </div>
-                                    <div className="market-mid">
-                                        <div className="market-bottom-border" />
+                                        <img src={remixShirt} className="test-shirt-image black-area shirt-box" alt="" />
                                     </div>
                                 </div>
     
@@ -209,8 +201,6 @@ class MyShirts extends Component {
                                         }}>REMIX</div>
                                         <div className="shirt-btn send-color">SEMD</div>
                                         <div className="shirt-btn redeem-color">REDEEM</div>
-                                    </div>
-                                    <div className="market-mid">
                                     </div>
     
                                 </div>

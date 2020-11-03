@@ -17,8 +17,8 @@ import '../node_modules/materialize-css/js/forms.js';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import 'react-transitions/dist/animations.css';
 
+// import Landing from './containers/Landing';
 import Register from './containers/Register';
-import Landing from './containers/Landing';
 import Intro from './containers/Intro';
 import Market from './containers/Market';
 import MyShirts from './containers/MyShirts';
@@ -33,11 +33,10 @@ const App = () => (
         
         <Switch>
           
-          <Route exact path='/' component={ Landing } />
-          <Route path='/intro' component={ Intro } />
+          <Route exact path='/' component={ Intro } />
           <Route path='/register'component={ Register } />
           <Route path='/market' component={ Market } />
-          <Route path='/myshirts'component={ MyShirts } />
+          <Route path='/mydesign'component={ MyShirts } />
 
         </Switch>
 
