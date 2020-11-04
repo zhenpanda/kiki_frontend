@@ -153,7 +153,7 @@ class MyShirts extends Component {
             }else if(stage === 4) {
                 setTimeout(() => {
                     this.setState({stage: 5})
-                }, 2000)
+                }, 1000)
                 
                 return(
                     <div>
@@ -199,7 +199,7 @@ class MyShirts extends Component {
                                         <div className="spacing" />
                                         <div className="shirt-btn remix-color" onClick={() => {
                                         }}>REMIX</div>
-                                        <div className="shirt-btn send-color">SEMD</div>
+                                        <div className="shirt-btn send-color">TRADE</div>
                                         <div className="shirt-btn redeem-color">REDEEM</div>
                                     </div>
     
