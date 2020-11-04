@@ -153,7 +153,7 @@ class MyShirts extends Component {
             }else if(stage === 4) {
                 setTimeout(() => {
                     this.setState({stage: 5})
-                }, 5000)
+                }, 2000)
                 
                 return(
                     <div>
