@@ -35,36 +35,6 @@ body{
 
 .kiki {
 
-    // default sass responsive
-    @include responsive (mobile-sm) {
-        padding: 0.75em;
-        min-width: 80%; 
-        margin: auto;
-    }; 
-    @include responsive (mobile-md) {
-        padding: 1.25em;
-        min-width: 375px; 
-        margin: auto;
-    }; 
-    @include responsive (mobile-lg) {
-        padding: 1.5em;
-        min-width: 375px; 
-        margin: auto;
-    }; 
-    @include responsive (laptop) {
-        // background-position: center;
-        background-attachment: fixed;
-        min-width: $mobile-max-width;
-        max-width: $desktop-width;
-        width: $mobile-max-width;
-        height: 100vh;
-        margin-top: 5em;
-        margin-left: auto;
-        margin-right: auto;
-        // padding-left: 4%;
-        // width: 30em; 
-    }
-
     .spacing {
         height: 0.5em;
     }
@@ -157,10 +127,10 @@ body{
             margin-bottom: 0.5em;
         }
         .arrow-icon {
-            font-size: 30pt;
+            font-size: 28pt;
             margin-top: 1.5%;
-            margin-left: 52%;
-            padding: 1.5%;
+            margin-left: 58.5%;
+            padding: 0.5%;
             padding-left: 7.5%;
             padding-right: 7.5%;
             color: $bg-shade-black;
@@ -195,10 +165,10 @@ body{
         }
 
         .arrow-icon-2 {
-            font-size: 30pt;
+            font-size: 20pt;
             margin-top: 1.5%;
             margin-left: 1.5%;
-            padding: 1.5%;
+            padding: 0.5%;
             padding-left: 7.5%;
             padding-right: 7.5%;
             color: $bg-shade-black;
@@ -365,7 +335,6 @@ body{
         color: $text-main-oj !important;
     }
 
-
     .black-area {
         background: $bg-shade-black;
     }
@@ -382,7 +351,8 @@ body{
         text-align: center;
         padding: 0.75em;
         margin: 0.75em;
-        border: 0.1em solid $text-lite-white;     
+        border: 0.1em solid $text-lite-white;  
+        cursor: pointer;   
     }
     .remix-color {
         color: $text-dark-teal;
@@ -429,7 +399,9 @@ body{
         font-size: 10pt;
     }
     .short-mid-bar {
-        height: 2.75em !important;    
+        height: 1em !important;    
+        margin-left: 1em !important;    
+        margin-right: 1em !important; 
     }
     .second-shirt {
         margin-top: 1em;
@@ -492,10 +464,105 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+    .back-to-market-btn {
+        border: 0.1em solid white;
+        border-radius: 0.5em;
+        padding: 1em;
+        color: white;
+        margin: 2em;
+        font-size: 15pt;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.5em;
+        cursor: pointer;
+    }
+    .delphins-img {
+        display: block;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 28em;
+        border: 0.1em solid white;
+    }
 
     .shirt-box {
         width: 70% !important;
         border: none !important;
     }
+    .collection-title-text {
+        text-align: center;
+        color: white;
+        margin-top: 3em;
+    }
 
+    // default sass responsive
+    @include responsive (mobile-sm) {
+        padding: 0.75em;
+        min-width: 80%; 
+        margin: auto;
+    }; 
+    @include responsive (mobile-md) {
+        padding: 1.25em;
+        min-width: 375px; 
+        margin: auto;
+    
+        .market-page {
+            
+            .header-bar {
+                .header-title {
+                    padding: 1em;
+                    font-size: 12pt;
+                }
+            }
+            .market-wrap {
+                height: 20em;
+            }
+            
+        }
+        .shirt-btn {
+            font-size: 10pt;
+            margin: 0.2em;
+            margin-top: 0.75em;
+        }
+
+    }; 
+    @include responsive (mobile-lg) {
+        padding: 1.5em;
+        min-width: 375px; 
+        margin: auto;
+
+        .market-page {
+            
+            .header-bar {
+                .header-title {
+                    padding: 1em;
+                    font-size: 12pt;
+                }
+            }
+            .market-wrap {
+                height: 20em;
+            }
+
+        }
+        .shirt-btn {
+            font-size: 10pt;
+            margin: 0.2em;
+            margin-top: 0.75em;
+        }
+
+    }; 
+    @include responsive (laptop) {
+        // background-position: center;
+        background-attachment: fixed;
+        min-width: $mobile-max-width;
+        max-width: $desktop-width;
+        width: $mobile-max-width;
+        height: 100vh;
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        // padding-left: 4%;
+        // width: 30em; 
+    }
+    
 }
